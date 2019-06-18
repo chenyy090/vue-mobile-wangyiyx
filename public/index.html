@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=0.5">
+    <link rel="icon" href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1560772441713&di=27f428a17bd6338a13d93c4439cda459&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20171026%2Faf75243cf6a34791bda3f0a4db26ce94.png">
+    <title>网易严选3</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1247844_fkieh4n9he5.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="https://as.alipayobjects.com/g/component/fastclick/1.0.6/fastclick.js"></script>
+    <script>
+      //解决点击响应延时0.3s问题
+      if ('addEventListener' in document) {
+        document.addEventListener('DOMContentLoaded', function() {
+          FastClick.attach(document.body);
+        }, false);
+      }
+      //1、淘宝方案：
+      // window.addEventListener('pageshow', function () {
+      //   remRefresh()
+      // })
+      //
+      // window.addEventListener('resize', function () {
+      //   remRefresh()
+      // })
+      //
+      // function remRefresh() {
+      //   let clientWidth = document.documentElement.clientWidth
+      //   let rem = clientWidth/10
+      //   document.documentElement.style.fontSize = rem + 'px'
+
+      //2、网易方案：
+      //iphone6  (375)  1rem = 100px
+      //其他机型  1rem = 屏幕宽/375 * 100
+      // }
+    </script>
+  </body>
+</html>
