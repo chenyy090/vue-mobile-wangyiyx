@@ -34,8 +34,8 @@
         <span>购物车</span>
       </a>
       <a href="javascript:;" class="footer-item"
-         :class="{on:'/personal' === $route.path}"
-         @click="goTo('/personal')">
+         :class="{on:'/profile' === $route.path}"
+         @click="goTo('/profile')">
         <span class="item-icon">
           <i class="iconfont icon-user"></i>
         </span>
